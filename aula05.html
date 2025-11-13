@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 03 - Pseudo-elementos</title>
+  
+  <style>
+    p::before {
+      content: "Início: ";
+      color: blue;
+      margin-right: 20px;
+    font-weight: lighter;
+    }
+
+    p::after {
+      content: " Fim.";
+      color: blueviolet;
+      margin-left: 8px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <p>Este é um parágrafo simples criado para praticar pseudo-elementos em CSS.</p>
+  <br>oi<br>
+  viagem<br><br>
+</body>
+</html>
+
