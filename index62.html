@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Animation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* A bolinha */
+        .bola {
+            width: 60px;
+            height: 60px;
+            background-color: #945eff;
+            border-radius: 50%;
+
+            /* Aplicando a animação */
+            animation-name: mover;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease;
+
+         
+        }
+
+        /* Keyframes = o que a animação faz */
+        @keyframes mover {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(250px);
+            };
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo da Propriedade Animation</h1>
+    <p>A bolinha se move da esquerda para a direita usando a propriedade <strong>animation</strong>:</p>
+
+    <div class="bola"></div>
+    <div></div>
+    <button class="btn"></button>
+
+</body>
+</html>

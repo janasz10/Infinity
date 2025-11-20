@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação com 4 Estados</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+        .quadrado {
+            width: 80px;
+            height: 80px;
+            background-color: blueviolet;
+            border-radius: 10px;
+
+            animation: ciclo 4s infinite ease-in-out;
+        }
+        @keyframes ciclo {
+           0%{
+            background-color: brown;
+            transform: translatex(0) scale(1);
+           } 
+            25% {
+                background-color: #ffd35e;
+                transform: translateX(150px) scale(1.2);
+        }
+            50% {
+                background-color: #5eff79;
+                transform: translateX(150px) translateY(150px) scale(0.9);
+            }
+
+            100% {
+                background-color: #5ea6ff;
+                transform: translateX(0) translateY(150px) scale(1);
+            }
+    </style>
+</head>
+<body>
+    <div class="quadrado"></div>
+</body>
+</html>

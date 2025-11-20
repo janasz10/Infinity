@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação Keyframes</title>
+
+    <style>
+        /* ANIMAÇÃO DA DIV */
+        .caixa {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            position: relative;
+            animation: animacaoDiv 4s infinite;
+            margin-bottom: 40px;
+        }
+
+        @keyframes animacaoDiv {
+            0% {
+                transform: translate(0, 0);
+                background-color: red;
+                opacity: 1;
+            }
+
+            33% {
+                transform: translate(200px, 0);
+                background-color: blue;
+                opacity: 0.6;
+            }
+
+            66% {
+                transform: translate(200px, 200px);
+                background-color: purple;
+                opacity: 0.3;
+            }
+
+            100% {
+                transform: translate(0, 0);
+                background-color: red;
+                opacity: 1;
+            }
+        }
+
+        /* ANIMAÇÃO DO BUTTON */
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            background-color: #ff5b5b;
+            cursor: pointer;
+            animation: animacaoBotao 4s infinite;
+        }
+
+        @keyframes animacaoBotao {
+            0% {
+                transform: scale(1);
+                background-color: #ff5b5b;
+                opacity: 1;
+            }
+
+            25% {
+                transform: scale(1.1);
+                background-color: #ff914d;
+                opacity: 0.8;
+            }
+
+            50% {
+                transform: scale(1);
+                background-color: #ffce3a;
+                opacity: 0.6;
+            }
+
+            75% {
+                transform: scale(1.1);
+                background-color: #6bcb77;
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(1);
+                background-color: #ff5b5b;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="caixa"></div>
+
+    <button>Clique Aqui</button>
+
+</body>
+</html>
