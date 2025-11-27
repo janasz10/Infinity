@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Janayna Souza</title>
+
+    <style>
+        /* ===================== Variáveis ===================== */
+        :root {
+            --primaria: #cba509;
+            --texto: #333;
+            --fundo: #fafafa;
+        }
+
+        /* ===================== Estilos Globais ===================== */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background: var(--fundo);
+            color: var(--texto);
+        }
+
+        header {
+            background: var(--primaria);
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 5px 0 0 0;
+        }
+
+        /* ===================== Introdução ===================== */
+        .intro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 50px;
+            background: #fff;
+            border-radius: 20px;
+            width: 85%;
+            margin: 40px auto;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .intro img {
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primaria);
+        }
+
+        .intro h2 {
+            margin-top: 0;
+            font-size: 32px;
+        }
+
+        /* ===================== Seções ===================== */
+        section {
+            width: 85%;
+            margin: 40px auto;
+        }
+
+        h2 {
+            color: var(--primaria);
+            margin-bottom: 10px;
+        }
+
+        /* ===================== Habilidades ===================== */
+        .habilidades ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .habilidades li {
+            background: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* ===================== Projetos ===================== */
+        .projetos div {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        /* ===================== Contato ===================== */
+        .contato {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        .redes {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .redes a {
+            padding: 10px 18px;
+            background: var(--primaria);
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+
+        .redes a:hover {
+            background: #2ec807;
+            transform: translateY(-5px) scale(1.05);
+        }
+
+        .redes a:active {
+            animation: quique 0.3s ease;
+        }
+
+        @keyframes quique {
+            0% { transform: translateY(0) scale(1); }
+            30% { transform: translateY(-10px) scale(1.1); }
+            50% { transform: translateY(0) scale(0.95); }
+            70% { transform: translateY(-5px) scale(1.05); }
+            100% { transform: translateY(0) scale(1); }
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 400px;
+        }
+
+        form input, form textarea {
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        form button {
+            background: var(--primaria);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: transform 0.2s ease;
+        }
+
+        form button:hover {
+            transform: translateY(-3px) scale(1.02);
+        }
+
+        /* ===================== Responsividade ===================== */
+        @media (max-width: 850px) {
+            .intro {
+                flex-direction: column;
+                text-align: center;
+            }
+            .intro img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            header h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header>
+        <h1>Janayna Souza</h1>
+        <p>Processos Gerenciais • Análise e Desenvolvimento de Sistemas</p>
+    </header>
+
+    <!-- ===================== INTRODUÇÃO ===================== -->
+    <section class="intro">
+        <img src="fotojana.jpeg" alt="Janayna Souza">
+        <div>
+            <h2>Olá! Eu sou a Janayna 👋</h2>
+            <p>
+                Sou formada em <strong>Processos Gerenciais</strong> e em
+                <strong>Análise e Desenvolvimento de Sistemas</strong>.
+                Trabalho há <strong>17 anos em uma gráfica</strong>, onde lidero o setor de artes,
+                desenvolvendo projetos gráficos, coordenando equipe e garantindo a qualidade
+                visual em todas as entregas.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===================== HABILIDADES ===================== -->
+    <section class="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Design Gráfico</li>
+            <li>Gestão de Equipe</li>
+            <li>Tratamento de Arquivos</li>
+            <li>Organização de Produção</li>
+            <li>Soluções Práticas</li>
+        </ul>
+    </section>
+
+    <!-- ===================== PROJETOS ===================== -->
+    <section class="projetos">
+        <h2>Projetos</h2>
+        <div>Desenvolvimento de identidade visual completa para cliente corporativo.</div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section class="contato">
+        <h2>Contato</h2>
+
+        <div class="redes">
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">GitHub</a>
+        </div>
+
+    </section>
+
+</body>
+</html>

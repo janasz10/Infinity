@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Janayna Souza</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f0f0f;
+            color: #fff;
+            line-height: 1.5;
+        }
+
+        header {
+            padding: 40px 20px;
+            text-align: center;
+            background: #111;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            opacity: 0.8;
+        }
+
+        /* INTRODUÇÃO */
+        .intro {
+            padding: 60px 20px;
+            display: flex;
+            max-width: 1000px;
+            margin: auto;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .intro img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #222;
+        }
+
+        .intro-text {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .intro-text h2 {
+            margin-bottom: 10px;
+        }
+
+        /* SEÇÕES */
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            border-left: 4px solid #24c238;
+            padding-left: 10px;
+            font-size: 28px;
+        }
+
+        /* HABILIDADES */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #111;
+            padding: 12px 20px;
+            border-radius: 6px;
+            border: 1px solid #222;
+        }
+
+        /* PROJETOS */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #111;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #222;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            border-color: #24c238;
+            transform: translateY(-4px);
+        }
+
+        /* EXPERIÊNCIA */
+        .experience-item {
+            margin-bottom: 20px;
+            background: #111;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #222;
+        }
+
+        /* CONTATO */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+        }
+
+        .contact-form button {
+            padding: 14px;
+            background: #24c238;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .contact-form button:hover {
+            background: #2ce245;
+        }
+
+        .social-links a {
+            margin-right: 15px;
+            color: #24c238;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111;
+            margin-top: 40px;
+            opacity: 0.7;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .intro {
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Janayna Souza</h1>
+    <p>Líder de Artes • Processos Gerenciais • Análise e Desenvolvimento de Sistemas</p>
+</header>
+
+<!-- INTRODUÇÃO -->
+<section class="intro">
+    <img src="sua-foto.jpg" alt="Foto de Janayna Souza">
+
+    <div class="intro-text">
+        <h2>Olá! Eu sou a Janayna</h2>
+        <p>
+            Sou formada em <strong>Processos Gerenciais</strong> e em 
+            <strong>Análise e Desenvolvimento de Sistemas</strong>.  
+            Trabalho há <strong>17 anos em uma gráfica</strong>, onde lidero o setor de artes, 
+            desenvolvendo projetos gráficos, coordenando equipe e garantindo a qualidade visual em todas as entregas.
+        </p>
+    </div>
+</section>
+
+<!-- HABILIDADES -->
+<section id="habilidades">
+    <h2>Habilidades</h2>
+    <div class="skills">
+        <div class="skill">Design Gráfico</div>
+        <div class="skill">Gestão de Equipe</div>
+        <div class="skill">Criação de Artes</div>
+        <div class="skill">Organização de Produção</div>
+        <div class="skill">Atendimento ao Cliente</div>
+        <div class="skill">Soluções Criativas</div>
+    </div>
+</section>
+
+<!-- PROJETOS -->
+<section id="projetos">
+    <h2>Projetos</h2>
+
+    <div class="projects">
+        <div class="project-card">
+            <h3>Projeto 1</h3>
+            <p>Desenvolvimento de identidade visual completa para cliente corporativo.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Projeto 2</h3>
+            <p>Reestruturação de layout gráfico para campanhas promocionais.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Projeto 3</h3>
+            <p>Gerenciamento e criação de artes para produção de materiais impressos.</p>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIÊNCIA -->
+<section id="experiencia">
+    <h2>Experiência Profissional</h2>
+
+    <div class="experience-item">
+        <h3>Líder do Setor de Artes — Gráfica XYZ</h3>
+        <p>Atuação por 17 anos na criação, revisão e supervisão de materiais gráficos, além da gestão de equipe e atendimento a clientes.</p>
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+    <h2>Contato</h2>
+
+    <div class="social-links">
+        <a href="#" target="_blank">LinkedIn</a>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">WhatsApp</a>
+    </div>
+
+    <br>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensagem enviada!');">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu email" required>
+        <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    © 2025 — Portfólio de Janayna Souza
+</footer>
+
+</body>
+</html>
